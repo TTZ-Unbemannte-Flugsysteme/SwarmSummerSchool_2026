@@ -19,8 +19,7 @@ If using the Robot Operating System (ROS) for your algorithms:
 
 1. Follow the official installation instructions for your chosen ROS distribution (e.g., ROS 2 Humble).
 2. Install the necessary middleware to communicate with the flight controller:
-   - For PX4: Install `microRTPS` agent or `uxrce_dds` agent.
-   - For ArduPilot or older PX4 setups: Install `MAVROS`.
+   - For ArduPilot: Install `MAVROS`.
 
 ## 4. Network Configuration
 

@@ -29,7 +29,7 @@ nav:
       - Welding Guide: hardware/assembly/welding.md
       - Nipping & Wiring: hardware/assembly/nipping.md
   - Software & Configuration:
-    - Firmware (PX4/ArduPilot): software/firmware.md
+    - Firmware (ArduPilot): software/firmware.md
     - Companion Computer: software/companion_computer.md
   - Algorithm Testing:
     - Simulation: algorithms/simulation.md
