@@ -4,6 +4,8 @@ Proper wire management and preparation are essential for a clean and reliable dr
 
 ## Wire Stripping and Nipping
 
+![Nipping Wiring](../../assets/Nipping%20Wiring.png)
+
 1. **Measure Twice, Cut Once**: Plan the routing of your wires before cutting them. Leave a small amount of slack to prevent tension during flight vibrations, but not so much that wires can get caught in propellers.
 2. **Nipping**: Use flush cutters (nippers) to make clean, straight cuts on wires and zip ties.
 3. **Stripping**: Use wire strippers matched to the gauge (AWG) of the wire. Typically, strip about 3-5mm of insulation for soldering to PDB pads or connectors.

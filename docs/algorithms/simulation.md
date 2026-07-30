@@ -6,13 +6,17 @@ Before flying real hardware, you must test your algorithms in a simulated enviro
 
 We recommend using **Gazebo** (or Gazebo Classic depending on your ROS version) paired with Software In The Loop (SITL).
 
-### PX4 SITL Setup
-1. Clone the PX4 Autopilot repository.
-2. Run the simulation environment:
+### ArduPilot SITL Setup
+1. Clone the ArduPilot repository and run the setup scripts for your OS.
+2. Navigate to the ArduCopter directory:
    ```bash
-   make px4_sitl gazebo
+   cd ardupilot/ArduCopter
    ```
-3. You should see a 3D environment open with a drone model.
+3. Run the SITL environment (e.g., paired with Gazebo):
+   ```bash
+   sim_vehicle.py -v ArduCopter -f gazebo-iris --console --map
+   ```
+4. You should see a 3D environment open with a drone model, alongside a MAVProxy console and map.
 
 ## Running Algorithms
 

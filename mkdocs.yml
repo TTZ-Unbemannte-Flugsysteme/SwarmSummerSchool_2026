@@ -26,9 +26,16 @@ nav:
   - Hardware:
     - Overview: hardware/index.md
     - Bill of Materials: hardware/bom.md
+    - System Architecture: hardware/architecture.md
+    - Expected Assembly: hardware/expected_assembly.md
     - Assembly:
+      - Assembly Flowchart: hardware/assembly/flowchart.md
       - Welding Guide: hardware/assembly/welding.md
       - Nipping & Wiring: hardware/assembly/nipping.md
+      - Motor Mounting: hardware/assembly/motors.md
+      - Frame Assembly: hardware/assembly/frame.md
+  - Integration:
+    - Overview: integration/index.md
   - Software & Configuration:
     - Firmware (ArduPilot): software/firmware.md
     - Companion Computer: software/companion_computer.md

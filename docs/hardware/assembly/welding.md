@@ -22,7 +22,7 @@ Proper welding/soldering is critical for the safety and reliability of your dron
 
 ## Power Distribution Board (PDB) Soldering & Assembly Log
 
-![PDB Soldering Workstation](../../assets/Screenshot%202026-07-29%20at%2014.06.17.jpg)
+![PDB Soldering Workstation](../../assets/soldier.png)
 
 ### 4.1 XT60 Main Battery Lead & ESC Soldering Technique
 
@@ -33,7 +33,7 @@ Proper welding/soldering is critical for the safety and reliability of your dron
 - Both the heavy-gauge 12AWG silicone XT60 battery wires and high-current PCB contact pads are pre-tinned with high-grade rosin-core solder prior to joining.
 - Fine solder wire is fed directly onto the heated joint to establish a solid chemical bond.
 
-![XT60 Battery Cable Soldering Detail](../../assets/Screenshot%202026-07-29%20at%2014.06.34.jpg)
+![XT60 Battery Cable Soldering Detail](../../assets/welding.png)
 
 **Polarity Verification:**
 
@@ -41,3 +41,15 @@ Proper welding/soldering is critical for the safety and reliability of your dron
 - **Negative Cable (Black):** Soldered to the opposing pad marked `-`.
 
 **ESC Power Cables:** 4x 30A ESC DC supply wires pre-tinned and attached to designated corner arm power rails.
+
+### 4.3 Manual Vacuum Desoldering Pump Rework Tool
+
+Manual spring-loaded vacuum extractor used for removing excess solder or correcting joint alignment during PDB assembly.
+
+![Figure 4.3: Manual Vacuum Desoldering Pump Rework Tool](../../assets/remove%20welding.png)
+
+### 4.4 XT90 Battery to XT60 PDB Adapter Cable
+
+Heavy 10AWG adapter cable bridging the Gens ace 4S battery (XT90) with the soldered frame lead (XT60) without cutting battery plugs.
+
+![Figure 4.4: XT90 Battery to XT60 PDB Adapter Cable](../../assets/XT90%20for%20Battery.png)
