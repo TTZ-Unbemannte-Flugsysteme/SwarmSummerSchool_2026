@@ -24,6 +24,7 @@ theme:
 nav:
   - Home: index.md
   - Hardware:
+    - Overview: hardware/index.md
     - Bill of Materials: hardware/bom.md
     - Assembly:
       - Welding Guide: hardware/assembly/welding.md
