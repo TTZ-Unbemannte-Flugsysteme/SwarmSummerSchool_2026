@@ -17,7 +17,6 @@ For this project, we exclusively use **ArduPilot (ArduCopter)**.
 ## 2. Sensor Calibration
 
 Once the firmware is installed, connect to the flight controller in Mission Planner and calibrate the onboard sensors:
-- **Compass**: Go to Setup -> Mandatory Hardware -> Compass. Start the Live Calibration and rotate the drone through all axes until the progress bar completes. Ensure you do this away from metallic objects.
 - **Accelerometer**: Go to Setup -> Mandatory Hardware -> Accel Calibration. Follow the prompts to place the drone level, on its left, right, nose down, nose up, and on its back.
 
 ## 3. Radio Setup
