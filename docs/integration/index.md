@@ -13,6 +13,8 @@
 
 Welcome to the Integration section. Here we will document the processes for combining hardware sub-systems and software configurations to ensure the drone is fully operational and ready for flight testing.
 
+<iframe src="connection_guide.html" width="100%" height="2500px" style="border:none; border-radius:12px; margin-top:20px;"></iframe>
+
 ## Voltage Verification
 ![Check Voltage](../assets/CheckVolt.png)
 
