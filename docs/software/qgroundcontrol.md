@@ -30,6 +30,8 @@ This is a **Matek H7A3-SLIM** flight controller (STM32H7A3RIT6 MCU) running Ardu
 3. QGC auto-connects within a few seconds — connection icon (top-left) goes from "Not Ready" once a link is established.
 4. Gear icon (Vehicle Setup) → Summary shows live Firmware Version, Vehicle Type, and Frame status.
 
+![Flashing Firmware in QGroundControl](../assets/flashing.png)
+
 ## 3. Power / Battery Wiring
 
 **Key finding:** USB-C power alone does NOT power the FC's 5V BEC output pad — confirmed by measuring only ~0.3V across 5V/G while on USB power. The BEC is driven from the battery input (Vbat), not USB VBUS.
