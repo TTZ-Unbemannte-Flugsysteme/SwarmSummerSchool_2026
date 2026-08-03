@@ -41,12 +41,7 @@ To manually pilot or take over the drone during flight tests, you must bind your
 *   On the drone, hold down the tiny **Bind button** on the receiver while simultaneously plugging in the drone's 4S LiPo battery.
 *   The status LEDs on the receiver will flash to indicate a successful bind. Exit bind mode on the RC XT7 and power cycle the drone.
 
-### 3. Software Calibration (Mission Planner)
-Once bound, the stick movements must be calibrated in ArduPilot:
-1. Connect the flight controller to your computer via USB and open **Mission Planner**.
-2. Navigate to **Setup -> Mandatory Hardware -> Radio Calibration**.
-3. Turn on the RC XT7. As you move the joysticks, you should see the green bars reacting on screen. 
-4. Click **Calibrate Radio** and move all sticks and switches to their maximum physical extents to set the endpoints for Pitch, Roll, Yaw, and Throttle.
+
 
 ## 3. Power / Battery Wiring
 
