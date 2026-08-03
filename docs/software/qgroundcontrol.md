@@ -147,6 +147,7 @@ Do all of this connected via USB with props off, vehicle on a stand:
 
 1. **Frame class & type** — Vehicle Setup → Frame. Must match physical motor layout exactly.
 2. **Accelerometer calibration** — Vehicle Setup → Sensors → Accelerometer (6-position capture).
+   <br>![Accelerometer Calibration](../assets/acc_cal.png)
 3. **Compass calibration** — Vehicle Setup → Sensors → Compass (only if an external compass is added; this board has none built-in).
 4. **Radio calibration** — Vehicle Setup → Radio (after channel order is fixed per section 7).
 5. **Flight modes** — assign Stabilize / AltHold / Loiter / RTL to switch positions.
