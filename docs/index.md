@@ -1,6 +1,6 @@
 # SwarmSummerSchool 2026 Drone Documentation
 
-![SwarmSummerSchool 2026](assets/SSS26.png)
+![SwarmSummerSchool 2026](assets/overview.jpg)
 
 Welcome to the official documentation for the SwarmSummerSchool 2026 drone project.
 
