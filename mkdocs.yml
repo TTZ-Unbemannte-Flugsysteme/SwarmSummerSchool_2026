@@ -37,7 +37,7 @@ nav:
   - Integration:
     - Overview: integration/index.md
   - Software & Configuration:
-    - Firmware (ArduPilot): software/firmware.md
+    - Mission Planner: software/firmware.md
     - QGroundControl Setup: software/qgroundcontrol.md
     - Companion Computer: software/companion_computer.md
   - Algorithm Testing:
