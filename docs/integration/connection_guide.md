@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MatekH7A3 + F450 — Complete Connection Guide</title>
 <style>
+
   :root{
     --bg:#f6f7f9; --card:#fff; --ink:#16181d; --muted:#5c6370; --line:#dde1e7;
     --accent:#2f6fed; --warn:#c2410c; --warnbg:#fff4ed; --ok:#15803d; --okbg:#eefbf1;
@@ -19,24 +14,24 @@
     }
   }
   *{box-sizing:border-box}
-  body{margin:0;padding:0 16px 72px;background:var(--bg);color:var(--ink);
+  .matek-guide {margin:0;padding:0 16px 72px;background:var(--bg);color:var(--ink);
        font:15px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
   .wrap{max-width:1000px;margin:0 auto}
   header{padding:34px 0 8px}
-  h1{font-size:29px;margin:0 0 6px;letter-spacing:-.025em}
-  h2{font-size:20px;margin:14px 0 12px;padding-bottom:8px;border-bottom:2px solid var(--line);
+  .matek-guide h1{font-size:29px;margin:0 0 6px;letter-spacing:-.025em}
+  .matek-guide h2{font-size:20px;margin:14px 0 12px;padding-bottom:8px;border-bottom:2px solid var(--line);
      scroll-margin-top:70px}
-  h3{font-size:15px;margin:22px 0 8px;color:var(--muted);text-transform:uppercase;
+  .matek-guide h3{font-size:15px;margin:22px 0 8px;color:var(--muted);text-transform:uppercase;
      letter-spacing:.06em}
   .sub{color:var(--muted);margin:0 0 12px}
   section{margin:38px 0}
   .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
         padding:16px 18px;margin:14px 0}
-  table{width:100%;border-collapse:collapse;font-size:14px}
-  th,td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
-  th{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+  .matek-guide table{width:100%;border-collapse:collapse;font-size:14px}
+  .matek-guide th, .matek-guide td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  .matek-guide th{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
   tr:last-child td{border-bottom:none}
-  code{background:var(--chip);padding:2px 6px;border-radius:5px;
+  .matek-guide code{background:var(--chip);padding:2px 6px;border-radius:5px;
        font:13px ui-monospace,SFMono-Regular,Menlo,monospace}
   .scroll{overflow-x:auto}
   .warn,.ok,.bad{border-radius:8px;padding:12px 15px;margin:14px 0;border-width:1px;
@@ -46,11 +41,11 @@
   .bad{background:var(--badbg);border-color:var(--bad)}    .bad b{color:var(--bad)}
   .pill{display:inline-block;background:var(--chip);border-radius:20px;padding:3px 11px;
         font-size:12px;color:var(--muted);margin:0 6px 6px 0}
-  nav{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:20;
+  .matek-guide nav{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:20;
       border-bottom:1px solid var(--line);margin-bottom:10px}
-  nav a{display:inline-block;font-size:13px;color:var(--accent);text-decoration:none;
+  .matek-guide nav a{display:inline-block;font-size:13px;color:var(--accent);text-decoration:none;
         padding:4px 10px;border-radius:16px;background:var(--chip);margin:0 5px 5px 0}
-  nav a:hover{text-decoration:underline}
+  .matek-guide nav a:hover{text-decoration:underline}
   .diagram{width:100%;overflow-x:auto}
   .diagram svg{width:100%;height:auto;display:block}
   .board{width:100%;max-width:520px;margin:0 auto}
@@ -80,16 +75,17 @@
   .st-y{background:var(--okbg);color:var(--ok);border:1px solid var(--ok)}
   .st-n{background:var(--badbg);color:var(--bad);border:1px solid var(--bad)}
   .st-w{background:var(--warnbg);color:var(--warn);border:1px solid var(--warn)}
-  details summary{cursor:pointer;font-weight:600}
+  .matek-guide details summary{cursor:pointer;font-weight:600}
   .foot{color:var(--muted);font-size:13px;margin-top:40px;text-align:center;
         border-top:1px solid var(--line);padding-top:18px}
+
 </style>
-</head>
-<body>
-<div class="wrap">
+
+<div class="matek-guide">
+
 
 <header>
-  <h1>MatekH7A3 &rarr; F450 &mdash; Connection Guide</h1>
+  # MatekH7A3 &rarr; F450 &mdash; Connection Guide
   <p class="sub">ArduCopter 4.7.0 &middot; Quad X &middot; every pad verified against the Matek silkscreen
      and this board's live parameters</p>
   <div>
@@ -115,7 +111,7 @@
 
 <!-- ========== 1 STATUS ========== -->
 <section id="status">
-  <h2>1 &middot; What is actually connected right now</h2>
+  ## 1 &middot; What is actually connected right now
   <p class="sub">Live read from the board &mdash; 2026-08-03, after wiring. Bench conditions, indoors.</p>
 
   <div class="ok">
@@ -188,7 +184,7 @@
 
 <!-- ========== 2 BOARD ========== -->
 <section id="board">
-  <h2>2 &middot; Board layout</h2>
+  ## 2 &middot; Board layout
   <p class="sub">Top view, forward arrow up. Pads colour-coded by what connects to them.</p>
   <div class="card">
     <div class="board"><svg viewBox="0 0 560 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MatekH7A3 pad layout">
@@ -352,7 +348,7 @@
 
 <!-- ========== 3 POWER ========== -->
 <section id="power">
-  <h2>3 &middot; Power &mdash; where everything gets its volts</h2>
+  ## 3 &middot; Power &mdash; where everything gets its volts
   <div class="ok">
     <b>The LiPo is the only power source.</b> It feeds the PDB, which feeds the <b>ESCs</b> (raw voltage)
     and the FC's <b>Vbat</b> pad. The flight controller regulates that down itself and hands out
@@ -497,7 +493,7 @@
 
 <!-- ========== 4 CONNECTOR BLOCK ========== -->
 <section id="block">
-  <h2>4 &middot; Receiver, compass and GPS &mdash; one block of pads</h2>
+  ## 4 &middot; Receiver, compass and GPS &mdash; one block of pads
   <p class="sub">All three live on the bottom edge, lower row. Ten pads, three devices.</p>
   <div class="card diagram wide"><svg viewBox="0 0 920 640" xmlns="http://www.w3.org/2000/svg" role="img"
        aria-label="Connector block wiring from board pads to receiver, compass and GPS">
@@ -615,7 +611,7 @@
 
 <!-- ========== 5 MOTORS ========== -->
 <section id="motors">
-  <h2>5 &middot; ESCs &amp; motors</h2>
+  ## 5 &middot; ESCs &amp; motors
   <p class="sub">Signal wires to <code>S1</code>&ndash;<code>S4</code>. ESC power comes from the PDB, not the FC.</p>
   <div class="card"><div class="frame">
       <div class="nose">▲ NOSE / FORWARD</div>
@@ -655,7 +651,7 @@
 
 <!-- ========== 6 UART ========== -->
 <section id="uart">
-  <h2>6 &middot; UART reference</h2>
+  ## 6 &middot; UART reference
   <div class="card scroll">
   <table>
     <tr><th>Serial</th><th>UART</th><th>Pads</th><th>Use</th><th>Baud</th></tr>
@@ -672,7 +668,7 @@
 
 <!-- ========== 7 BRINGUP ========== -->
 <section id="bringup">
-  <h2>7 &middot; Bring-up order</h2>
+  ## 7 &middot; Bring-up order
   <div class="card scroll">
   <table>
     <tr><th>#</th><th>Step</th><th>Confirms</th></tr>
@@ -697,6 +693,5 @@
   parameter backup in <code>param_backups/</code>
 </p>
 
+
 </div>
-</body>
-</html>

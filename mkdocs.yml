@@ -36,6 +36,7 @@ nav:
       - Frame Assembly: hardware/assembly/frame.md
   - Integration:
     - Overview: integration/index.md
+    - Connection Guide: integration/connection_guide.md
   - Software & Configuration:
     - Mission Planner: software/firmware.md
     - QGroundControl Setup: software/qgroundcontrol.md
