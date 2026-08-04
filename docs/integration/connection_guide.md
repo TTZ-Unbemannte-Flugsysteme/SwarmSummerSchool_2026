@@ -109,7 +109,7 @@
 </nav>
 
 <!-- ========== 1 STATUS ========== -->
-  ## 1 &middot; What is actually connected right now
+## 1 &middot; What is actually connected right now
   <p class="sub">Live read from the board &mdash; 2026-08-03, after wiring. Bench conditions, indoors.</p>
 
   <div class="ok">
@@ -180,7 +180,7 @@
   </div>
 
 <!-- ========== 2 BOARD ========== -->
-  ## 2 &middot; Board layout
+## 2 &middot; Board layout
   <p class="sub">Top view, forward arrow up. Pads colour-coded by what connects to them.</p>
   <div class="card">
     <div class="board"><svg viewBox="0 0 560 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MatekH7A3 pad layout">
@@ -342,7 +342,7 @@
   </details>
 
 <!-- ========== 3 POWER ========== -->
-  ## 3 &middot; Power &mdash; where everything gets its volts
+## 3 &middot; Power &mdash; where everything gets its volts
   <div class="ok">
     <b>The LiPo is the only power source.</b> It feeds the PDB, which feeds the <b>ESCs</b> (raw voltage)
     and the FC's <b>Vbat</b> pad. The flight controller regulates that down itself and hands out
@@ -485,7 +485,7 @@
     &mdash; ESCs draw from the PDB. <b>A motor test needs the main battery.</b></div>
 
 <!-- ========== 4 CONNECTOR BLOCK ========== -->
-  ## 4 &middot; Receiver, compass and GPS &mdash; one block of pads
+## 4 &middot; Receiver, compass and GPS &mdash; one block of pads
   <p class="sub">All three live on the bottom edge, lower row. Ten pads, three devices.</p>
   <div class="card diagram wide"><svg viewBox="0 0 920 640" xmlns="http://www.w3.org/2000/svg" role="img"
        aria-label="Connector block wiring from board pads to receiver, compass and GPS">
@@ -601,7 +601,7 @@
     whichever is easier to reach. A compass here is what finally clears <code>COMPASS_DEV_ID=0</code>.</div>
 
 <!-- ========== 5 MOTORS ========== -->
-  ## 5 &middot; ESCs &amp; motors
+## 5 &middot; ESCs &amp; motors
   <p class="sub">Signal wires to <code>S1</code>&ndash;<code>S4</code>. ESC power comes from the PDB, not the FC.</p>
   <div class="card"><div class="frame">
       <div class="nose">▲ NOSE / FORWARD</div>
@@ -639,7 +639,7 @@
     PWM ESCs. For BLHeli_S set <code>MOT_PWM_TYPE=6</code> (DShot600) &mdash; but only if the ESCs support it.</div>
 
 <!-- ========== 6 UART ========== -->
-  ## 6 &middot; UART reference
+## 6 &middot; UART reference
   <div class="card scroll">
   <table>
     <tr><th>Serial</th><th>UART</th><th>Pads</th><th>Use</th><th>Baud</th></tr>
@@ -654,7 +654,7 @@
   </div>
 
 <!-- ========== 7 BRINGUP ========== -->
-  ## 7 &middot; Bring-up order
+## 7 &middot; Bring-up order
   <div class="card scroll">
   <table>
     <tr><th>#</th><th>Step</th><th>Confirms</th></tr>
