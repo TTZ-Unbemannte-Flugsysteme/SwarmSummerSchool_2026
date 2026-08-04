@@ -15,13 +15,6 @@ Welcome to the Integration section. Here we will document the processes for comb
 
 [**See full steps here**](connection_guide.md)
 
-
-## Voltage Verification
-![Check Voltage](../assets/CheckVolt.png)
-
-## Motor Spin & Direction Test
-![Check Motor](../assets/checkMotor.png)
-
 ## Putting Everything Together
 
 Once the individual components have been tested (Voltage verified, Motors spinning correctly), the final integration step involves:
@@ -30,6 +23,14 @@ Once the individual components have been tested (Voltage verified, Motors spinni
 2. **Peripheral Connections**: Double-check that the GPS/Compass, Receiver, and Companion Computer (Raspberry Pi) are plugged into their designated UART/I2C ports securely.
 3. **Telemetry & Communication Test**: Power up the drone using the 4S LiPo and verify that MAVLink telemetry is successfully transmitting to your Ground Control Station (e.g., Mission Planner).
 4. **Final Center of Gravity (CoG) Check**: Lift the drone by the center of the frame and ensure it balances evenly. Adjust the battery position forward or backward if it tilts heavily.
+
+
+## Voltage Verification
+![Check Voltage](../assets/CheckVolt.png)
+
+## Motor Spin & Direction Test
+![Check Motor](../assets/checkMotor.png)
+
 
 ## Binding the Receiver (FrSky X7s / RC XT7)
 
