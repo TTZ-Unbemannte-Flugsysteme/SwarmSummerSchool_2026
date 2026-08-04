@@ -1,18 +1,20 @@
 <style>
 
-  :root{
+  /* Light Theme */
+  :root, [data-md-color-scheme="default"] {
     --bg:#f6f7f9; --card:#fff; --ink:#16181d; --muted:#5c6370; --line:#dde1e7;
     --accent:#2f6fed; --warn:#c2410c; --warnbg:#fff4ed; --ok:#15803d; --okbg:#eefbf1;
     --bad:#b91c1c; --badbg:#fef2f2; --chip:#eef1f6; --pcb:#1e4d8c;
     --m1:#e11d48; --m2:#2563eb; --m3:#15803d; --m4:#b45309;
   }
-  @media (prefers-color-scheme:dark){
-    :root{
-      --bg:#0f1115; --card:#171a21; --ink:#e8eaee; --muted:#9aa3b2; --line:#282d38;
-      --accent:#6ea0ff; --warn:#fb923c; --warnbg:#2a1a10; --ok:#4ade80; --okbg:#10231a;
-      --bad:#f87171; --badbg:#2a1214; --chip:#212734;
-    }
+
+  /* Dark Theme */
+  [data-md-color-scheme="slate"] {
+    --bg:#0f1115; --card:#171a21; --ink:#e8eaee; --muted:#9aa3b2; --line:#282d38;
+    --accent:#6ea0ff; --warn:#fb923c; --warnbg:#2a1a10; --ok:#4ade80; --okbg:#10231a;
+    --bad:#f87171; --badbg:#2a1214; --chip:#212734;
   }
+  
   *{box-sizing:border-box}
   .matek-guide {margin:0;padding:0 16px 72px;background:var(--bg);color:var(--ink);
        font:15px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
