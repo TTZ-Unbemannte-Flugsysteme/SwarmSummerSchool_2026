@@ -47,7 +47,6 @@ nav:
     - Real Hardware Deployment: algorithms/deployment.md
 
 markdown_extensions:
-  - md_in_html
   - admonition
   - pymdownx.details
   - pymdownx.superfences

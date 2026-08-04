@@ -81,7 +81,7 @@
 
 </style>
 
-<div class="matek-guide" markdown="1">
+<div class="matek-guide">
 
 
 <header>
@@ -110,7 +110,7 @@
 </nav>
 
 <!-- ========== 1 STATUS ========== -->
-<section id="status" markdown="1">
+<section id="status">
   ## 1 &middot; What is actually connected right now
   <p class="sub">Live read from the board &mdash; 2026-08-03, after wiring. Bench conditions, indoors.</p>
 
@@ -183,7 +183,7 @@
 </section>
 
 <!-- ========== 2 BOARD ========== -->
-<section id="board" markdown="1">
+<section id="board">
   ## 2 &middot; Board layout
   <p class="sub">Top view, forward arrow up. Pads colour-coded by what connects to them.</p>
   <div class="card">
@@ -347,7 +347,7 @@
 </section>
 
 <!-- ========== 3 POWER ========== -->
-<section id="power" markdown="1">
+<section id="power">
   ## 3 &middot; Power &mdash; where everything gets its volts
   <div class="ok">
     <b>The LiPo is the only power source.</b> It feeds the PDB, which feeds the <b>ESCs</b> (raw voltage)
@@ -492,7 +492,7 @@
 </section>
 
 <!-- ========== 4 CONNECTOR BLOCK ========== -->
-<section id="block" markdown="1">
+<section id="block">
   ## 4 &middot; Receiver, compass and GPS &mdash; one block of pads
   <p class="sub">All three live on the bottom edge, lower row. Ten pads, three devices.</p>
   <div class="card diagram wide"><svg viewBox="0 0 920 640" xmlns="http://www.w3.org/2000/svg" role="img"
@@ -610,7 +610,7 @@
 </section>
 
 <!-- ========== 5 MOTORS ========== -->
-<section id="motors" markdown="1">
+<section id="motors">
   ## 5 &middot; ESCs &amp; motors
   <p class="sub">Signal wires to <code>S1</code>&ndash;<code>S4</code>. ESC power comes from the PDB, not the FC.</p>
   <div class="card"><div class="frame">
@@ -650,7 +650,7 @@
 </section>
 
 <!-- ========== 6 UART ========== -->
-<section id="uart" markdown="1">
+<section id="uart">
   ## 6 &middot; UART reference
   <div class="card scroll">
   <table>
@@ -667,7 +667,7 @@
 </section>
 
 <!-- ========== 7 BRINGUP ========== -->
-<section id="bringup" markdown="1">
+<section id="bringup">
   ## 7 &middot; Bring-up order
   <div class="card scroll">
   <table>
