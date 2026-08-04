@@ -15,6 +15,13 @@ Welcome to the Integration section. Here we will document the processes for comb
 
 [**See full steps here**](connection_guide.md)
 
+<div class="my-8">
+    <video controls class="w-full max-w-3xl mx-auto rounded-xl shadow-2xl border border-slate-700/50">
+        <source src="../assets/Assembled_V1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
 ## Putting Everything Together
 
 Once the individual components have been tested (Voltage verified, Motors spinning correctly), the final integration step involves:
