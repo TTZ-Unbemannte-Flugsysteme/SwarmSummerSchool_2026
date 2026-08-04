@@ -81,7 +81,6 @@
 
 </style>
 
-<div class="matek-guide">
 
 
 <header>
@@ -100,17 +99,16 @@
 </header>
 
 <nav>
-  <a href="#status">1 · Status now</a>
-  <a href="#board">2 · Board</a>
-  <a href="#power">3 · Power</a>
-  <a href="#block">4 · RX / GPS / compass</a>
-  <a href="#motors">5 · Motors</a>
-  <a href="#uart">6 · UARTs</a>
-  <a href="#bringup">7 · Bring-up</a>
+  <a href="#1-what-is-actually-connected-right-now">1 · Status now</a>
+  <a href="#2-board-layout">2 · Board</a>
+  <a href="#3-power-where-everything-gets-its-volts">3 · Power</a>
+  <a href="#4-receiver-compass-and-gps-one-block-of-pads">4 · RX / GPS / compass</a>
+  <a href="#5-escs-motors">5 · Motors</a>
+  <a href="#6-uart-reference">6 · UARTs</a>
+  <a href="#7-bring-up-order">7 · Bring-up</a>
 </nav>
 
 <!-- ========== 1 STATUS ========== -->
-<section id="status">
   ## 1 &middot; What is actually connected right now
   <p class="sub">Live read from the board &mdash; 2026-08-03, after wiring. Bench conditions, indoors.</p>
 
@@ -180,10 +178,8 @@
     magnetometer &mdash; if it does, wiring <code>SDA</code>/<code>SCL</code> makes it appear instantly,
     indoors, no GPS fix required.
   </div>
-</section>
 
 <!-- ========== 2 BOARD ========== -->
-<section id="board">
   ## 2 &middot; Board layout
   <p class="sub">Top view, forward arrow up. Pads colour-coded by what connects to them.</p>
   <div class="card">
@@ -344,10 +340,8 @@
     <summary>Official Matek photo (cross-check the silkscreen)</summary>
     <img src="H7A3-SLIM.jpg" alt="MatekH7A3-SLIM top and bottom" style="width:100%;margin-top:12px;border-radius:8px">
   </details>
-</section>
 
 <!-- ========== 3 POWER ========== -->
-<section id="power">
   ## 3 &middot; Power &mdash; where everything gets its volts
   <div class="ok">
     <b>The LiPo is the only power source.</b> It feeds the PDB, which feeds the <b>ESCs</b> (raw voltage)
@@ -489,10 +483,8 @@
   <div class="ok"><b>Why USB alone works on the bench.</b> USB-C powers the STM32 and the peripheral rails,
     which is how parameters and firmware are read and written with no battery. But USB cannot spin motors
     &mdash; ESCs draw from the PDB. <b>A motor test needs the main battery.</b></div>
-</section>
 
 <!-- ========== 4 CONNECTOR BLOCK ========== -->
-<section id="block">
   ## 4 &middot; Receiver, compass and GPS &mdash; one block of pads
   <p class="sub">All three live on the bottom edge, lower row. Ten pads, three devices.</p>
   <div class="card diagram wide"><svg viewBox="0 0 920 640" xmlns="http://www.w3.org/2000/svg" role="img"
@@ -607,10 +599,8 @@
     telemetry). The GPS pads down here are <code>Rx3</code>/<code>Tx3</code>.</div>
   <div class="ok"><b>Both <code>SCL</code>/<code>SDA</code> pairs are one bus</b> in parallel &mdash; use
     whichever is easier to reach. A compass here is what finally clears <code>COMPASS_DEV_ID=0</code>.</div>
-</section>
 
 <!-- ========== 5 MOTORS ========== -->
-<section id="motors">
   ## 5 &middot; ESCs &amp; motors
   <p class="sub">Signal wires to <code>S1</code>&ndash;<code>S4</code>. ESC power comes from the PDB, not the FC.</p>
   <div class="card"><div class="frame">
@@ -647,10 +637,8 @@
     front-right, so <b>B drives M4</b> and <b>C drives M2</b>. Don't read that as miswiring.</div>
   <div class="warn"><b>ESC protocol is plain PWM</b> (<code>MOT_PWM_TYPE=0</code>). Correct for standard
     PWM ESCs. For BLHeli_S set <code>MOT_PWM_TYPE=6</code> (DShot600) &mdash; but only if the ESCs support it.</div>
-</section>
 
 <!-- ========== 6 UART ========== -->
-<section id="uart">
   ## 6 &middot; UART reference
   <div class="card scroll">
   <table>
@@ -664,10 +652,8 @@
     <tr><td>SERIAL6</td><td>USART6</td><td><code>Rx6 Tx6</code> (top)</td><td>Free</td><td>57600</td></tr>
   </table>
   </div>
-</section>
 
 <!-- ========== 7 BRINGUP ========== -->
-<section id="bringup">
   ## 7 &middot; Bring-up order
   <div class="card scroll">
   <table>
@@ -685,7 +671,6 @@
   <div class="warn"><b>Still open:</b> battery voltage sensing reads an impossible <b>4.57&nbsp;V</b>,
     the <b>compass is not detected</b>, and <code>AHRS_ORIENTATION</code> reads <b>2 (Yaw90)</b> where
     Yaw180 was expected. Settle all three while the props are still off.</div>
-</section>
 
 <p class="foot">
   Pinout from <code>libraries/AP_HAL_ChibiOS/hwdef/MatekH7A3/</code> &middot;
@@ -694,4 +679,6 @@
 </p>
 
 
-</div>
+
+
+<script>setTimeout(function() { document.querySelector('.md-content').classList.add('matek-guide'); }, 100);</script>
