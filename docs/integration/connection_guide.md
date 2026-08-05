@@ -168,10 +168,9 @@
     a failsafe may also trigger the moment you arm.
   </div>
 
-  <div class="warn">
-    <b>Still unresolved:</b> <code>AHRS_ORIENTATION=2</code> (Yaw90) where Yaw180 was expected.
-    A wrong value flips a copter on takeoff. Settle it while the props are off &mdash; the reliable
-    test is tilting the airframe and watching which way the reported attitude moves.
+  <div class="ok">
+    <b>Resolved:</b> <code>AHRS_ORIENTATION=8</code> (Roll180). This board is mounted upside-down relative to the frame.
+    It is critical this is set correctly before calibrating the accelerometer so the flight controller knows which way is "up".
   </div>
 
   <div class="ok">
@@ -662,7 +661,7 @@
     <tr><th>#</th><th>Step</th><th>Confirms</th></tr>
     <tr><td>1</td><td>Solder battery to PDB, check polarity <b>before</b> connecting the FC</td><td>No magic smoke</td></tr>
     <tr><td>2</td><td>PDB &rarr; <code>Vbat</code>/<code>G</code>; verify 5V rail</td><td>FC powers up</td></tr>
-    <tr><td>3</td><td>Settle <code>AHRS_ORIENTATION</code> against actual mounting</td><td>Currently 2 (Yaw90)</td></tr>
+    <tr><td>3</td><td>Settle <code>AHRS_ORIENTATION</code> against actual mounting</td><td>Set to 8 (Roll180)</td></tr>
     <tr><td>4</td><td>Receiver wired &amp; working &mdash; now do endpoint calibration in Radio Calibration</td><td>RC link <b>done</b></td></tr>
     <tr><td>5</td><td>Wire GPS (TX/RX crossed), wait outdoors for 3D fix</td><td>Satellites &gt; 6</td></tr>
     <tr><td>6</td><td>Wire compass on SDA/SCL, then calibrate it</td><td>Heading</td></tr>
@@ -671,8 +670,7 @@
   </table>
   </div>
   <div class="warn"><b>Still open:</b> battery voltage sensing reads an impossible <b>4.57&nbsp;V</b>,
-    the <b>compass is not detected</b>, and <code>AHRS_ORIENTATION</code> reads <b>2 (Yaw90)</b> where
-    Yaw180 was expected. Settle all three while the props are still off.</div>
+    and the <b>compass is not detected</b>. Settle both while the props are still off.</div>
 
 <p class="foot">
   Pinout from <code>libraries/AP_HAL_ChibiOS/hwdef/MatekH7A3/</code> &middot;

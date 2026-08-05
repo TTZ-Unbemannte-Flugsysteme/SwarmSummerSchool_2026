@@ -19,7 +19,7 @@ For this project, we exclusively use **ArduPilot (ArduCopter)**.
 ## 2. Sensor Calibration
 
 Once the firmware is installed, connect to the flight controller in Mission Planner and calibrate the onboard sensors:
-- **Accelerometer**: Go to Setup -> Mandatory Hardware -> Accel Calibration. Follow the prompts to place the drone level, on its left, right, nose down, nose up, and on its back.
+- **Accelerometer**: First, since the flight controller is mounted upside down on the frame, go to Config &rarr; Full Parameter List and set `AHRS_ORIENTATION` to `8` (Roll180). Then go to Setup &rarr; Mandatory Hardware &rarr; Accel Calibration. Follow the prompts to place the drone level, on its left, right, nose down, nose up, and on its back.
   <br>![Accelerometer Calibration](../assets/Acc.png)
 
 ## 3. GPS & Compass Setup (GEP-M10 / M9N)

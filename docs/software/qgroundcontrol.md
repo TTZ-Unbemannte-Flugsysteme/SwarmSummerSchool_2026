@@ -39,7 +39,7 @@ This is a **Matek H7A3-SLIM** flight controller (STM32H7A3RIT6 MCU) running Ardu
 Do all of this connected via USB with props off, vehicle on a stand:
 
 1. **Frame class & type** — Vehicle Setup → Frame. Must match physical motor layout exactly.
-2. **Accelerometer calibration** — Vehicle Setup → Sensors → Accelerometer (6-position capture).
+2. **Accelerometer calibration** — First, since the flight controller is mounted upside down on the frame, go to Parameters and set `AHRS_ORIENTATION` to `8` (Roll180). Then go to Vehicle Setup &rarr; Sensors &rarr; Accelerometer (6-position capture).
    <br>![Accelerometer Calibration](../assets/acc_cal.png)
 3. **Compass calibration** — Vehicle Setup → Sensors → Compass (only if an external compass is added; this board has none built-in).
 4. **Radio calibration** — Vehicle Setup → Radio (after channel order is fixed per section 7).
