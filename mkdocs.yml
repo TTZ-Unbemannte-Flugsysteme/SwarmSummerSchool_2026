@@ -42,6 +42,8 @@ nav:
     - Mission Planner: software/firmware.md
     - QGroundControl Setup: software/qgroundcontrol.md
     - Companion Computer: software/companion_computer.md
+  - Checklist:
+    - End-to-End Checklist: checklist/index.md
   - Algorithm Testing:
     - Simulation: algorithms/simulation.md
     - Real Hardware Deployment: algorithms/deployment.md
