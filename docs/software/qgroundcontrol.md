@@ -1,5 +1,7 @@
 # QGroundControl & Matek H7A3-SLIM Setup
 
+!!! info "Official ArduPilot Documentation"
+    For comprehensive details on all calibration and setup steps, we highly recommend referencing the official [ArduPilot Hardware Configuration Guide](https://ardupilot.org/copter/docs/configuring-hardware.html#).
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>

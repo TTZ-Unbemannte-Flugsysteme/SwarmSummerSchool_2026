@@ -1,7 +1,9 @@
 # Firmware Setup (ArduPilot)
 
-This section covers flashing the ArduPilot firmware to the flight controller and performing the initial configuration.
+!!! info "Official ArduPilot Documentation"
+    For comprehensive details on all calibration and setup steps, we highly recommend referencing the official [ArduPilot Hardware Configuration Guide](https://ardupilot.org/copter/docs/configuring-hardware.html#).
 
+This section covers flashing the ArduPilot firmware to the flight controller and performing the initial configuration.
 ## 1. Flashing Firmware
 
 For this project, we exclusively use **ArduPilot (ArduCopter)**.
