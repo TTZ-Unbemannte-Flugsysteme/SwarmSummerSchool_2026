@@ -23,3 +23,9 @@ The global "Default channel order" setting in Radio Setup only applies to newly 
 4. Back in QGC, redo Radio Calibration so it re-learns the corrected channel positions.
 
 *Alternative (FC-side, no transmitter changes): set RCMAP_ROLL / RCMAP_PITCH / RCMAP_THROTTLE / RCMAP_YAW parameters in QGC to match whatever channel numbers each function actually lands on.*
+
+## Interactive Setup Simulator
+
+Practice configuring your transmitter inputs, the mixer, and verifying them in Betaflight before trying it on real hardware.
+
+<iframe src="simulator.html" width="100%" height="800px" style="border: none; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-top: 20px;"></iframe>
