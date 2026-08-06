@@ -77,12 +77,4 @@ Since the GPS is wired to **UART3**, ensure the following parameters are set in 
 | Throttle stick moves "Roll" field in QGC | Transmitter channel order (TAER) doesn't match ArduPilot's expected order (AETR) — fix via Mixer page or RCMAP parameters. |
 | Need to bypass a specific pre-arm check (e.g. compass) for bench testing | QGC Parameters → search ARMING_CHECK → uncheck the specific check. Not recommended to leave disabled for actual GPS-mode flight. |
 
-## 6. Optional: PX4 Simulation via Gazebo
 
-Since this board runs ArduPilot (not PX4), trying PX4 itself is only practical via simulation, not on this hardware (no official PX4 target for this MCU/board). Covered separately if needed — see the ArduPilot+Gazebo section below instead, which matches your actual firmware.
-
-ArduPilot + Gazebo SITL (for testing without touching hardware): clone ardupilot repo, run the Ubuntu prereqs script, install Gazebo + the ardupilot_gazebo plugin, then launch with:
-
-```bash
-sim_vehicle.py -v ArduCopter -f gazebo-iris --model JSON --map --console
-```
