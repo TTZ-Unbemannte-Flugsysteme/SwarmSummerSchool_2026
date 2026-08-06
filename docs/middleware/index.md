@@ -17,7 +17,7 @@ When you are ready to move beyond the basic RC flight and into advanced autonomo
 
 ## LMinterface
 
-We also utilize the **LMinterface** repository for additional middleware integrations.
+The **LMinterface** acts as an interface layer that can be used with Language Models in an offboard configuration. It is designed for Human-Swarm Interaction Evaluation and for ROS integration utilizing language models.
 
 !!! tip
     **[TTZ-Unbemannte-Flugsysteme / LMinterface](https://github.com/TTZ-Unbemannte-Flugsysteme/LMinterface)**
