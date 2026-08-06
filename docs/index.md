@@ -4,6 +4,8 @@
 
 Welcome to the official documentation for the SwarmSummerSchool 2026 drone project.
 
+[Visit the Official Summer Camp 2026 Website](https://ainin.de/summercamp2026/){ .md-button .md-button--primary }
+
 ## 1. Executive Summary
 
 This document serves as the official unboxing documentation, physical verification report, and preliminary architecture log for all hardware components received for the autonomous quadcopter build based on the **F450 platform**. All items displayed on the assembly staging area have been unpacked, visually inspected, logged, and categorized prior to power distribution board soldering, motor attachment, and ArduPilot software configuration.
