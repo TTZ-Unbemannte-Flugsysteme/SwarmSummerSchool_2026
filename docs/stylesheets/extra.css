@@ -11,3 +11,17 @@
 .md-nav__item--active > .md-nav__link {
     box-shadow: -2px 0px 8px -2px var(--md-accent-fg-color);
 }
+
+/* Custom primary button styling: Lime background, black text */
+.md-typeset .md-button--primary {
+    background-color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+    color: #000000;
+}
+
+/* Ghost button on hover with a black (or theme-aware) border and text */
+.md-typeset .md-button--primary:hover {
+    background-color: transparent;
+    border-color: var(--md-default-fg-color);
+    color: var(--md-default-fg-color);
+}
