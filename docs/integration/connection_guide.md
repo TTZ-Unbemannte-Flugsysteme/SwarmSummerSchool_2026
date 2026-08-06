@@ -182,6 +182,10 @@
 
 <!-- ========== 2 BOARD ========== -->
 ## 2 &middot; Board layout
+  <details class="card" style="margin-bottom: 20px;">
+    <summary>Official Matek photo (cross-check the silkscreen)</summary>
+    <img src="../assets/H7A3-SLIM.jpg" alt="MatekH7A3-SLIM top and bottom" style="width:100%;margin-top:12px;border-radius:8px">
+  </details>
   <p class="sub">Top view, forward arrow up. Pads colour-coded by what connects to them.</p>
   <div class="card">
     <div class="board"><svg viewBox="0 0 560 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MatekH7A3 pad layout">
@@ -337,10 +341,7 @@
   </div>
   <div class="warn"><b>Motor pads run <code>S11 S4 S3 S2 S1</code> top-to-bottom</b> on the outer right
     column &mdash; so <b>S1 is the lowest of the four</b>, not the top. Easy to solder the quad backwards.</div>
-  <details class="card">
-    <summary>Official Matek photo (cross-check the silkscreen)</summary>
-    <img src="H7A3-SLIM.jpg" alt="MatekH7A3-SLIM top and bottom" style="width:100%;margin-top:12px;border-radius:8px">
-  </details>
+
 
 <!-- ========== 3 POWER ========== -->
 ## 3 &middot; Power &mdash; where everything gets its volts
