@@ -14,6 +14,7 @@ You can find the complete source code, documentation, and installation instructi
 ## Integration
 
 When you are ready to move beyond the basic RC flight and into advanced autonomous control:
+
 1. Ensure your companion computer (Raspberry Pi) is correctly wired to the flight controller's telemetry port.
 2. Clone the DroneManager repository onto your companion computer.
 3. Follow the setup instructions in the repository's README to establish the MAVLink bridge.
