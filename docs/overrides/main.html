@@ -13,3 +13,11 @@
     </div>
   </div>
 {% endblock %}
+
+{% block site_name %}
+  {{ super() }}
+  <div style="display: flex; gap: 15px; margin-left: 20px; align-items: center;">
+    <img src="{{ base_url }}/assets/Logo_TTZ_Unbemannte_Flugsysteme_kurz_weiß.png" alt="TTZ Logo" style="height: 24px;">
+    <img src="{{ base_url }}/assets/ainin_logo_n_RGB.png" alt="AININ Logo" style="height: 24px;">
+  </div>
+{% endblock %}
