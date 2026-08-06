@@ -3,6 +3,7 @@ site_description: Documentation for assembling, configuring, and testing algorit
 
 theme:
   name: material
+  custom_dir: docs/overrides
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
