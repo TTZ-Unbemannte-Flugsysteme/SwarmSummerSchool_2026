@@ -52,6 +52,8 @@ nav:
   - Algorithm Testing:
     - Simulation: algorithms/simulation.md
     - Real Hardware Deployment: algorithms/deployment.md
+  - Advanced Middleware:
+    - DroneManager: middleware/index.md
 
 markdown_extensions:
   - admonition
