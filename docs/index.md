@@ -24,7 +24,7 @@ This documentation is structured into three main phases:
 
 - Start by reviewing the [Bill of Materials](hardware/bom.md).
 
-> [!TIP]
-> Use the navigation bar on the left to explore the sections!
+!!! tip
+    Use the navigation bar on the left to explore the sections!
 
 ---

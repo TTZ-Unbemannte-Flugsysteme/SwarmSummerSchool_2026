@@ -4,8 +4,8 @@ Proper welding/soldering is critical for the safety and reliability of your dron
 
 ## Safety First
 
-> [!WARNING]
-> Soldering irons get extremely hot (typically 350°C - 400°C). Always place the iron in its stand when not in use. Work in a well-ventilated area to avoid inhaling flux fumes.
+!!! warning
+    Soldering irons get extremely hot (typically 350°C - 400°C). Always place the iron in its stand when not in use. Work in a well-ventilated area to avoid inhaling flux fumes.
 
 ## Required Equipment
 

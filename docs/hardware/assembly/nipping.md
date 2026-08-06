@@ -12,8 +12,8 @@ Proper wire management and preparation are essential for a clean and reliable dr
 
 ## Cable Management
 
-> [!TIP]
-> Keep signal wires (e.g., receiver, GPS, I2C) away from high-current power wires (ESC, Battery) to minimize electromagnetic interference (EMI).
+!!! tip
+    Keep signal wires (e.g., receiver, GPS, I2C) away from high-current power wires (ESC, Battery) to minimize electromagnetic interference (EMI).
 
 - **Zip Ties**: Use small zip ties to secure ESCs to the arms and bundle wires together. Use flush cutters to snip the excess tail of the zip tie completely flat so it doesn't leave a sharp edge.
 - **Heat Shrink**: Cover all exposed solder joints with heat shrink tubing to prevent short circuits.

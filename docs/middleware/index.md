@@ -8,8 +8,8 @@ DroneManager provides a robust, high-level interface for managing multiple drone
 
 You can find the complete source code, documentation, and installation instructions for DroneManager in the official repository:
 
-> [!TIP]
-> **[AImotion-Bavaria / DroneManager](https://github.com/AImotion-Bavaria/DroneManager)**
+!!! tip
+    **[AImotion-Bavaria / DroneManager](https://github.com/AImotion-Bavaria/DroneManager)**
 
 ## Integration
 

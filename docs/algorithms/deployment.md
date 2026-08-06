@@ -2,8 +2,8 @@
 
 Once algorithms have been thoroughly tested in simulation, you can deploy them to the physical drone.
 
-> [!CAUTION]
-> Always remove the propellers when testing new software on the bench for the first time.
+!!! caution
+    Always remove the propellers when testing new software on the bench for the first time.
 
 ## 1. Bench Testing
 
