@@ -1,5 +1,16 @@
 /* Custom CSS for SwarmSummerSchool 2026 */
 
+/* Custom Neon Green Accent Colors */
+[data-md-color-scheme="default"] {
+  --md-accent-fg-color: #0b9e14; /* Darker vibrant green for light mode readability */
+  --md-accent-fg-color--transparent: rgba(11, 158, 20, 0.1);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #39ff14; /* Bright neon green for dark mode */
+  --md-accent-fg-color--transparent: rgba(57, 255, 20, 0.1);
+}
+
 /* Add a line to the active menu item in the left sidebar */
 .md-nav__item--active > .md-nav__link {
     border-left: 3px solid var(--md-accent-fg-color);
