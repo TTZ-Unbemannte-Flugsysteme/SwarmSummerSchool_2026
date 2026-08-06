@@ -22,3 +22,16 @@
 .md-nav__item--active > .md-nav__link {
     box-shadow: -2px 0px 8px -2px var(--md-accent-fg-color);
 }
+
+/* Force primary buttons to use the accent color instead of primary color */
+.md-typeset .md-button--primary {
+    background-color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+    color: var(--md-default-bg-color);
+}
+
+.md-typeset .md-button--primary:hover {
+    background-color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+    filter: brightness(1.2);
+}
