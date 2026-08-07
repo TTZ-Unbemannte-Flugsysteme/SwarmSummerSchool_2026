@@ -2,21 +2,7 @@
 
 ## Architecture Overview
 
-```mermaid
-flowchart TD
-    GCS["Ground Control Station"]
-    
-    subgraph Drone ["Drone Avionics"]
-        FC["Matek H7A3 Flight Controller"]
-        PI["Raspberry Pi (Companion Computer)"]
-        ESP["XIAO-ESP32-C6 (DroneBridge)"]
-        
-        FC <==>|"MAVLink over USB (USB-C to USB-A)"| PI
-        FC <==>|"MAVLink over UART (TX/RX)"| ESP
-    end
-
-    ESP <==>|"Standard WiFi"| GCS
-```
+<iframe src="../communication_diagram.html" width="100%" height="400px" style="border: none; margin: 20px 0; border-radius: 12px; background-color: #0f172a;"></iframe>
 
 
 ## Companion Computer (Raspberry Pi)
