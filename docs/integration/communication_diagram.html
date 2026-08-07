@@ -115,20 +115,46 @@
             <p class="text-[10px] text-slate-400 uppercase tracking-wider">XIAO-ESP32-C6</p>
         </div>
 
-        <!-- Connector 2: UART -->
-        <div class="flex flex-row md:flex-col items-center justify-center w-full md:w-20 h-16 md:h-auto mx-2 my-2 md:my-0 shrink-0">
-            <div class="flex flex-col items-center absolute md:relative -translate-y-6 md:translate-y-0 md:-translate-y-6">
-                <span class="text-[10px] text-lime-400 font-semibold whitespace-nowrap bg-slate-900/80 px-2 py-0.5 rounded-full border border-lime-500/30 mb-1">
-                    UART (TX/RX)
+        <!-- Connector 2: UART Detailed -->
+        <div class="flex flex-col items-center justify-center w-full md:w-32 h-auto mx-4 my-6 md:my-0 shrink-0 relative">
+            <div class="absolute -top-8 w-full text-center">
+                <span class="text-[10px] text-lime-400 font-semibold whitespace-nowrap bg-slate-900/80 px-2 py-0.5 rounded-full border border-lime-500/30">
+                    UART Telemetry
                 </span>
             </div>
-            <!-- Mobile Vertical Line -->
-            <div class="w-1 h-full bg-slate-700/50 rounded overflow-hidden relative md:hidden">
-                <div class="absolute inset-0 anim-line-v"></div>
+            
+            <!-- 5V Line -->
+            <div class="flex items-center w-full mb-1.5">
+                <span class="text-[9px] font-mono text-red-400 w-8 text-right mr-1">5V</span>
+                <div class="flex-1 h-[2px] bg-red-500/30 rounded relative overflow-hidden">
+                    <div class="absolute inset-0 anim-line-h bg-[linear-gradient(90deg,transparent_0%,#ef4444_50%,transparent_100%)]"></div>
+                </div>
+                <span class="text-[9px] font-mono text-red-400 w-8 ml-1">4V5</span>
             </div>
-            <!-- Desktop Horizontal Line -->
-            <div class="hidden md:block w-full h-1 bg-slate-700/50 rounded overflow-hidden relative">
-                <div class="absolute inset-0 anim-line-h"></div>
+            
+            <!-- GND Line -->
+            <div class="flex items-center w-full mb-1.5">
+                <span class="text-[9px] font-mono text-slate-400 w-8 text-right mr-1">GND</span>
+                <div class="flex-1 h-[2px] bg-slate-500/50 rounded"></div>
+                <span class="text-[9px] font-mono text-slate-400 w-8 ml-1">GND</span>
+            </div>
+            
+            <!-- TX -> RX Line -->
+            <div class="flex items-center w-full mb-1.5">
+                <span class="text-[9px] font-mono text-lime-400 w-8 text-right mr-1">TX</span>
+                <div class="flex-1 h-[2px] bg-lime-500/30 rounded relative overflow-hidden">
+                    <div class="absolute inset-0 anim-line-h"></div>
+                </div>
+                <span class="text-[9px] font-mono text-lime-400 w-8 ml-1">RX2</span>
+            </div>
+            
+            <!-- RX <- TX Line -->
+            <div class="flex items-center w-full">
+                <span class="text-[9px] font-mono text-lime-400 w-8 text-right mr-1">RX</span>
+                <div class="flex-1 h-[2px] bg-lime-500/30 rounded relative overflow-hidden rotate-180">
+                    <div class="absolute inset-0 anim-line-h"></div>
+                </div>
+                <span class="text-[9px] font-mono text-lime-400 w-8 ml-1">TX2</span>
             </div>
         </div>
 
