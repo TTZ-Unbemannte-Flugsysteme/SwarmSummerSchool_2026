@@ -7,7 +7,7 @@
 
 ## Companion Computer (Raspberry Pi)
 
-Connects to FC via USB-C (FC) to USB-A (Pi) for direct MAVLink access. Runs the SAR mission software. Independent of the telemetry link below.
+Connects to a spare FC UART (TX/RX/GND) for direct MAVLink access, and is powered directly from the flight battery via a 5V/3A UBEC step-down regulator. Runs the SAR mission software. Independent of the telemetry link below.
 
 ## Wireless Telemetry Link
 
