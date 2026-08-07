@@ -1,5 +1,7 @@
 # Bind with Remote Control
 
+For a visual guide on the entire binding and configuration process, check out: **[YouTube Video Tutorial](https://www.youtube.com/watch?v=sZ_rFqVEFAw)**
+
 ## Binding the Receiver (FrSky X7s / RC XT7)
 
 1. Power off the receiver.
