@@ -28,11 +28,13 @@ Connect the Raspberry Pi's GPIO UART pins to a spare UART on the Matek Flight Co
 ## 3. Flight Controller Configuration (MAVLink)
 
 To tell the Flight Controller to send MAVLink data over this UART connection:
-1. Open QGroundControl and go to **Vehicle Setup -> Parameters**.
+1. Open your Ground Control Station (QGroundControl or Mission Planner) and connect to the drone.
+   - **In QGroundControl:** Go to **Vehicle Setup -> Parameters**.
+   - **In Mission Planner:** Go to **Config -> Full Parameter List**.
 2. Search for the `SERIALx` parameter that matches your chosen UART (e.g., if using UART2, look for `SERIAL2`).
 3. Set **`SERIALx_PROTOCOL`** to `2` (MAVLink 2).
 4. Set **`SERIALx_BAUD`** to `921` (921600 baud rate for high bandwidth).
-5. Reboot the flight controller.
+5. Write/Save the parameters and reboot the flight controller.
 
 On the Raspberry Pi side, ensure your `MAVROS` launch file or custom script is configured to read from `/dev/serial0` (or `/dev/ttyAMA0`) at `921600` baud.
 
