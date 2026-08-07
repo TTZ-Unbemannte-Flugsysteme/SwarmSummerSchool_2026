@@ -66,6 +66,31 @@
             100% { background-position: 0 -100%; } 
         }
         
+        /* Highly visible dashed data flow */
+        .data-flow-h {
+            background-image: linear-gradient(90deg, #bef264 50%, transparent 50%);
+            background-size: 16px 100%;
+            animation: flow-h 0.8s linear infinite;
+            opacity: 0.8;
+        }
+        
+        .data-flow-h-rev {
+            background-image: linear-gradient(90deg, #bef264 50%, transparent 50%);
+            background-size: 16px 100%;
+            animation: flow-h-rev 0.8s linear infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes flow-h {
+            0% { background-position: 0 0; }
+            100% { background-position: 16px 0; }
+        }
+        
+        @keyframes flow-h-rev {
+            0% { background-position: 16px 0; }
+            100% { background-position: 0 0; }
+        }
+        
         .pulse-icon {
             animation: pulse-op 2s infinite;
         }
@@ -142,8 +167,8 @@
             <!-- TX -> RX Line -->
             <div class="flex items-center w-full mb-1.5">
                 <span class="text-[9px] font-mono text-lime-400 w-8 text-right mr-1">TX</span>
-                <div class="flex-1 h-[2px] bg-lime-500/30 rounded relative overflow-hidden">
-                    <div class="absolute inset-0 anim-line-h"></div>
+                <div class="flex-1 h-[4px] bg-slate-800 rounded relative overflow-hidden">
+                    <div class="absolute inset-0 data-flow-h"></div>
                 </div>
                 <span class="text-[9px] font-mono text-lime-400 w-8 ml-1">RX2</span>
             </div>
@@ -151,8 +176,8 @@
             <!-- RX <- TX Line -->
             <div class="flex items-center w-full">
                 <span class="text-[9px] font-mono text-lime-400 w-8 text-right mr-1">RX</span>
-                <div class="flex-1 h-[2px] bg-lime-500/30 rounded relative overflow-hidden rotate-180">
-                    <div class="absolute inset-0 anim-line-h"></div>
+                <div class="flex-1 h-[4px] bg-slate-800 rounded relative overflow-hidden">
+                    <div class="absolute inset-0 data-flow-h-rev"></div>
                 </div>
                 <span class="text-[9px] font-mono text-lime-400 w-8 ml-1">TX2</span>
             </div>
