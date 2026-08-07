@@ -101,12 +101,12 @@
         }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-[100vh] overflow-hidden bg-slate-900 md:bg-transparent rounded-xl">
+<body class="flex items-center justify-start md:justify-center min-h-[100vh] bg-slate-900 md:bg-transparent rounded-xl overflow-x-auto">
 
-    <div class="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto py-8 px-4">
+    <div class="flex flex-row items-center justify-start min-w-max w-full max-w-6xl mx-auto py-8 px-4">
         
         <!-- Node 1: GCS -->
-        <div class="glass-card flex flex-col items-center p-6 w-full max-w-[180px] text-center z-10 shrink-0">
+        <div class="glass-card flex flex-col items-center p-6 w-[180px] text-center z-10 shrink-0">
             <div class="w-16 h-16 bg-blue-900/30 rounded-full flex items-center justify-center mb-3 border border-blue-500/50 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
                 <i class="fa-solid fa-laptop text-2xl text-blue-400"></i>
             </div>
@@ -115,24 +115,19 @@
         </div>
 
         <!-- Connector 1: WiFi -->
-        <div class="flex flex-row md:flex-col items-center justify-center w-full md:w-20 h-16 md:h-auto mx-2 my-2 md:my-0 shrink-0 group">
-            <div class="flex flex-col items-center absolute md:relative -translate-y-6 md:translate-y-0 md:-translate-y-6 transition-transform">
-                <span class="text-[10px] text-blue-400 font-semibold whitespace-nowrap bg-slate-900/80 px-2 py-0.5 rounded-full border border-blue-500/30 mb-1">
+        <div class="flex flex-col items-center justify-center w-24 mx-2 shrink-0 group relative">
+            <div class="absolute -translate-y-8">
+                <span class="text-[10px] text-blue-400 font-semibold whitespace-nowrap bg-slate-900/80 px-2 py-0.5 rounded-full border border-blue-500/30">
                     <i class="fa-solid fa-wifi pulse-icon mr-1"></i> WiFi
                 </span>
             </div>
-            <!-- Mobile Vertical Line -->
-            <div class="w-1 h-full bg-slate-700/50 rounded overflow-hidden relative md:hidden">
-                <div class="absolute inset-0 anim-line-wifi-v"></div>
-            </div>
-            <!-- Desktop Horizontal Line -->
-            <div class="hidden md:block w-full h-1 bg-slate-700/50 rounded overflow-hidden relative">
+            <div class="w-full h-1 bg-slate-700/50 rounded overflow-hidden relative">
                 <div class="absolute inset-0 anim-line-wifi-h"></div>
             </div>
         </div>
 
         <!-- Node 2: DroneBridge (ESP32) -->
-        <div class="glass-card flex flex-col items-center p-6 w-full max-w-[180px] text-center z-10 shrink-0 border-t-2 border-t-lime-500/50">
+        <div class="glass-card flex flex-col items-center p-6 w-[180px] text-center z-10 shrink-0 border-t-2 border-t-lime-500/50">
             <div class="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center mb-3 border border-lime-500/30">
                 <i class="fa-solid fa-microchip text-2xl text-lime-400"></i>
             </div>
@@ -141,8 +136,8 @@
         </div>
 
         <!-- Connector 2: UART Detailed -->
-        <div class="flex flex-col items-center justify-center w-full md:w-32 h-auto mx-4 my-6 md:my-0 shrink-0 relative">
-            <div class="absolute -top-8 w-full text-center">
+        <div class="flex flex-col items-center justify-center w-36 mx-4 shrink-0 relative">
+            <div class="absolute -top-10 w-full text-center">
                 <span class="text-[10px] text-lime-400 font-semibold whitespace-nowrap bg-slate-900/80 px-2 py-0.5 rounded-full border border-lime-500/30">
                     UART Telemetry
                 </span>
@@ -184,7 +179,7 @@
         </div>
 
         <!-- Node 3: FC -->
-        <div class="glass-card flex flex-col items-center p-6 w-full max-w-[180px] text-center z-10 shrink-0 border-2 border-lime-500 shadow-[0_0_20px_rgba(132,204,22,0.15)] bg-slate-800/90 relative overflow-hidden">
+        <div class="glass-card flex flex-col items-center p-6 w-[180px] text-center z-10 shrink-0 border-2 border-lime-500 shadow-[0_0_20px_rgba(132,204,22,0.15)] bg-slate-800/90 relative overflow-hidden">
             <div class="absolute -right-4 -top-4 text-[80px] opacity-5 text-lime-500"><i class="fa-solid fa-plane"></i></div>
             <div class="w-16 h-16 bg-lime-900/30 rounded-full flex items-center justify-center mb-3 border border-lime-500">
                 <i class="fa-solid fa-satellite-dish text-2xl text-white"></i>
@@ -194,24 +189,19 @@
         </div>
 
         <!-- Connector 3: USB -->
-        <div class="flex flex-row md:flex-col items-center justify-center w-full md:w-20 h-16 md:h-auto mx-2 my-2 md:my-0 shrink-0">
-            <div class="flex flex-col items-center absolute md:relative -translate-y-6 md:translate-y-0 md:-translate-y-6">
-                <span class="text-[10px] text-slate-300 font-semibold whitespace-nowrap bg-slate-900/80 px-2 py-0.5 rounded-full border border-slate-500/30 mb-1">
+        <div class="flex flex-col items-center justify-center w-24 mx-2 shrink-0 relative">
+            <div class="absolute -translate-y-8">
+                <span class="text-[10px] text-slate-300 font-semibold whitespace-nowrap bg-slate-900/80 px-2 py-0.5 rounded-full border border-slate-500/30">
                     <i class="fa-brands fa-usb mr-1 text-slate-400"></i> USB-C to A
                 </span>
             </div>
-            <!-- Mobile Vertical Line -->
-            <div class="w-1 h-full bg-slate-700/50 rounded overflow-hidden relative md:hidden">
-                <div class="absolute inset-0 anim-line-v bg-[linear-gradient(180deg,transparent_0%,#94a3b8_50%,transparent_100%)]"></div>
-            </div>
-            <!-- Desktop Horizontal Line -->
-            <div class="hidden md:block w-full h-1 bg-slate-700/50 rounded overflow-hidden relative">
+            <div class="w-full h-1 bg-slate-700/50 rounded overflow-hidden relative">
                 <div class="absolute inset-0 anim-line-h bg-[linear-gradient(90deg,transparent_0%,#94a3b8_50%,transparent_100%)]"></div>
             </div>
         </div>
 
         <!-- Node 4: RPi -->
-        <div class="glass-card flex flex-col items-center p-6 w-full max-w-[180px] text-center z-10 shrink-0 border-t-2 border-t-red-500/50">
+        <div class="glass-card flex flex-col items-center p-6 w-[180px] text-center z-10 shrink-0 border-t-2 border-t-red-500/50">
             <div class="w-16 h-16 bg-red-900/20 rounded-full flex items-center justify-center mb-3 border border-red-500/30 shadow-[0_0_15px_rgba(239,68,68,0.1)]">
                 <i class="fa-brands fa-raspberry-pi text-3xl text-red-400"></i>
             </div>
