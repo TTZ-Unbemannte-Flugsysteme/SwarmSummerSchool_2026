@@ -22,8 +22,8 @@ Connect the Raspberry Pi's GPIO UART pins to a spare UART on the Matek Flight Co
 - **FC RX2** connects to **Pi TXD** (Pin 8 / GPIO 14)
 - **FC GND** connects to **Pi GND** (Pin 14 or any ground pin)
 
-> [!IMPORTANT]
-> RX always connects to TX, and TX connects to RX. You must also connect the ground wire between the FC and Pi to ensure stable data transmission!
+!!! important
+    RX always connects to TX, and TX connects to RX. You must also connect the ground wire between the FC and Pi to ensure stable data transmission!
 
 ## 3. Flight Controller Configuration (MAVLink)
 
